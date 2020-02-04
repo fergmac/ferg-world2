@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './custom-button.styles.scss';
+// import { CustomButtonContaner } from './custom-button.styles.jsx';
 
 const CustomButton = ({ children, isGoogleSignIn, inverted, ...otherProps}) => (
     <button className={`${inverted ? 'inverted' : ''} ${isGoogleSignIn ? 'google-sign-in' : ''} custom-button`} {...otherProps}>
@@ -9,3 +10,16 @@ const CustomButton = ({ children, isGoogleSignIn, inverted, ...otherProps}) => (
 )
 
 export default CustomButton;
+
+// TODO: doesnt display correctly
+// import React from 'react';
+
+// import { CustomButtonContainer } from './custom-button.styles.jsx';
+
+// const CustomButton = ({ children, ...props }) => (
+//     <CustomButtonContainer {...props}>
+//         {children}
+//     </CustomButtonContainer>
+// )
+
+// export default CustomButton;
